@@ -9,38 +9,44 @@
 </head>
 
 <body>
+
     <div class="container">
-        <div class="flex fraseologia">
-            <h2>Fraseologia</h2>
+        <section class="flex fraseologia">
+            <h1>Fraseologia Inicial</h1>
             <div class="card" id="card1">
-                <p class="quote">Olá, tudo bem? Me chamo *Danilo* e vou dar prosseguimento em seu atendimento! Me informa por gentileza o *CEP*, *Nome da Rua* e *Número de fachada da residência* para verificar se possui viabilidade na sua região e logo em seguida te passar nossas ofertas</p>
+                <p class="card__desc">Olá, tudo bem? Me chamo *Danilo* e vou dar prosseguimento em seu atendimento! Me informa por gentileza o *CEP*, *Nome da Rua* e *Número de fachada da residência* para verificar se possui viabilidade na sua região e logo em seguida te passar nossas ofertas</p>
                 <div class="buttons">
                     <button class="copy-button" onclick="copyText('card1')">Copiar</button>
                     <button class="edit-button" onclick="openModal('card1')">Editar</button>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="ofertas">
-            <h2>Ofertas</h2>
-            <div class="card_ofertas">
+        <section class="flex ofertas">
+            <h1>Ofertas</h1>
+            <div class="cards">
+                <!-- Card 1 -->
                 <div class="card" id="card2">
-                    <p class="quote">
+                    <p class="card__desc">
                         📌 1 - Oi Fibra 1 GB *R$199,90* no *Cartão de Crédito ou Débito em Conta*<br><br>
     
-                        📌 2 - Oi Fibra 600MB *R$109,90* no *Cartão de Crédito ou Débito em Conta*<br><br>
+                        📌 2 - Oi Fibra 500MB *R$119,90* no *Cartão de Crédito ou Débito em Conta*<br><br>
                         
-                        📌 3 - Oi Fibra 400MB *R$89,90* no *Cartão de Crédito ou Débito em Conta*<br><br>
+                        📌 3 - Oi Fibra 400MB *R$99,90* no *Cartão de Crédito ou Débito em Conta*<br><br>
                         
                         ⚠️ Boleto tem o acréscimo de R$20,00<br><br>
+
+                        Qual das ofertas ficaria melhor para você?
                     </p>
                     <div class="buttons">
                         <button class="copy-button" onclick="copyText('card2')">Copiar</button>
                         <button class="edit-button" onclick="openModal('card2')">Editar</button>
                     </div>
                 </div>
+
+                <!-- Card 2 -->
                 <div class="card" id="card3">
-                    <p class="quote">
+                    <p class="card__desc">
                         📌 1 - Oi Fibra 1 GB *R$199,90* no *Cartão de Crédito ou Débito em Conta*<br><br>
     
                         📌 2 - Oi Fibra 600MB *R$109,90* no *Cartão de Crédito ou Débito em Conta*<br><br>
@@ -48,33 +54,327 @@
                         📌 3 - Oi Fibra 400MB *R$89,90* no *Cartão de Crédito ou Débito em Conta*<br><br>
                         
                         ⚠️ Boleto tem o acréscimo de R$20,00<br><br>
+
+                        Qual das ofertas ficaria melhor para você?
                     </p>
                     <div class="buttons">
                         <button class="copy-button" onclick="copyText('card3')">Copiar</button>
                         <button class="edit-button" onclick="openModal('card3')">Editar</button>
                     </div>
                 </div>
+
+                <!-- Card 3 -->
                 <div class="card" id="card4">
-                    <p class="quote">
-                        📌 1 - Oi Fibra 1 GB *R$199,90* no *Cartão de Crédito ou Débito em Conta*<br><br>
-    
-                        📌 2 - Oi Fibra 600MB *R$109,90* no *Cartão de Crédito ou Débito em Conta*<br><br>
+                    <p class="card__desc">
+                        📌 1 - Oi Fibra X Premium 1 GB + 2 Pontos Wi-Fi 6 FTTR + globoplay *R$199,90* no *Cartão de Crédito ou Débito em Conta*<br><br>
+
+                        📌 2 - Oi Fibra X Premium 700 MB + 2 Pontos Wi-Fi 6 FTTR + globoplay *R$169,90* no *Cartão de Crédito ou Débito em Conta*<br><br>
                         
-                        📌 3 - Oi Fibra 400MB *R$89,90* no *Cartão de Crédito ou Débito em Conta*<br><br>
+                        📌 3 - Oi Fibra X  600 MB + 2 Pontos Wi-Fi 5 + globoplay *R$149,90* no *Cartão de Crédito ou Débito em Conta*<br><br>
+                        
+                        📌 4 - Oi Fibra 600MB 1 Ponto Wi-Fi 5 + globoplay *R$109,90* no *Cartão de Crédito ou Débito em Conta*<br><br>
+                        
+                        📌 5 - Oi Fibra 400MB 1 Ponto Wi-Fi 5 *R$89,90* no *Cartão de Crédito ou Débito em Conta*<br><br>
                         
                         ⚠️ Boleto tem o acréscimo de R$20,00<br><br>
+
+                        Qual das ofertas ficaria melhor para você?
                     </p>
                     <div class="buttons">
                         <button class="copy-button" onclick="copyText('card4')">Copiar</button>
                         <button class="edit-button" onclick="openModal('card4')">Editar</button>
                     </div>
                 </div>
+
+                
+            </div>
+        </section>
+
+        <section class="flex analise">
+            <h1>Analise de Crédito</h1>
+            <div class="cards">
+                <!-- CPF -->
+                <div class="card" id="card5">
+                    <h3>CPF</h3>
+                    <p class="card__desc">
+                        Certo, estes são os dados necessários para fazermos a análise de crédito e realizarmos a venda<br><br>
+                        Nome Completo do Titular:<br>
+                        CPF:<br>
+                        Data de Nascimento:<br>
+                        Nome completo da mãe do titular:<br>
+                        Ponto de referência:<br>
+                        E-mail:<br>
+                        2 telefones de contato sendo 1 deles WhatsApp:<br>
+                        Banco:<br>
+                        Agência:<br>
+                        Conta:<br>
+                    </p>
+                    <div class="buttons">
+                        <button class="copy-button" onclick="copyText('card5')">Copiar</button>
+                        <button class="edit-button" onclick="openModal('card5')">Editar</button>
+                    </div>
+                </div>
+
+                <!-- CNPJ -->
+                <div class="card" id="card6">
+                    <h3>CNPJ</h3>
+                    <p class="card__desc">
+                        Certo, estes são os dados necessários para fazermos a análise de crédito e realizarmos a venda<br><br>
+                        Razão social:<br>
+                        CNPJ:<br>
+                        CPF vinculado ao CNPJ:<br>
+                        E-mail:<br>
+                        2 Telefones para contato sendo 1 deles WhatsApp:<br>
+                        Ponto de referência:<br>
+                        Banco:<br>
+                        Agência:<br>
+                        Conta:<br>
+                    </p>
+                    <div class="buttons">
+                        <button class="copy-button" onclick="copyText('card6')">Copiar</button>
+                        <button class="edit-button" onclick="openModal('card6')">Editar</button>
+                    </div>
+                </div>
+
+                <!-- CPF REPROVADO -->
+                <div class="card" id="card7">
+                    <h3>CPF REPROVADO</h3>
+                    <p class="card__desc">
+                        Peço desculpas, mas infelizmente o *CPF* foi *reprovado* na análise de crédito. Teria algum outro CPF ou CNPJ para fazer nova análise? Pode ser de um parente (pai, mãe, irmãos) ou de até algum amigo(a). Assim que a internet for instalado você pode transferir novamente para seu nome.
+                    </p>
+                    <div class="buttons">
+                        <button class="copy-button" onclick="copyText('card7')">Copiar</button>
+                        <button class="edit-button" onclick="openModal('card7')">Editar</button>
+                    </div>
+                </div>
             </div>
 
-            <!-- Adicione mais cards conforme necessário -->
-        </div>
+        </section>
 
+        <section class="flex pagamento">
+            <h1>Formas de Pagamento</h1>
+            <div class="cards">
+                <!-- cartão de crédito -->
+                <div class="card" id="card8">
+                    <h3>Cartão de Crédito</h3>
+                    <p class="card__desc">
+                        Como você optou pelo meio de pagamento cartão de crédito eu preciso te passar algumas informações.<br><br>
 
+1 -  Você precisa ter limite referente ao plano contratado pois será feito uma *pré-reserva* para verificar se o cartão é *válido* e logo em seguida será feito o *estorno*. Não se preocupe em relação a isto, pois não será cobrado nada a mais.<br>
+
+2 - Irá chegar em seu *E-mail* e *WhatsApp* um *Link* para cadastrar o seu *Cartão de crédito*. Para sua própria segurança e comodidade o cadastro do cartão é realizado em sua casa, portanto a Oi não solicita nenhum dado referente ao seu cartão. <br>
+
+3 - É de suma importância que você cadastre o cartão o mais breve possível, pois o link tem um limite de tempo de expiração e também a sua compra só é liberada após o cadastro.<br>
+                    </p>
+                    <div class="buttons">
+                        <button class="copy-button" onclick="copyText('card8')">Copiar</button>
+                        <button class="edit-button" onclick="openModal('card8')">Editar</button>
+                    </div>
+                </div>
+
+                <!-- bancos disponíveis -->
+                <div class="card" id="card9">
+                    <h3>Bancos Disponíveis Legado</h3>
+                    <p class="card__desc">
+                        Itaú<br>
+                        Bradesco<br>
+                        Banco do Brasil<br>
+                        Banrisul<br>
+                        Santander<br>
+                        Caixa Económica Federal<br>
+                    </p>
+                    <div class="buttons">
+                        <button class="copy-button" onclick="copyText('card9')">Copiar</button>
+                        <button class="edit-button" onclick="openModal('card9')">Editar</button>
+                    </div>
+                </div>
+
+                <!-- bancos disponíveis -->
+                <div class="card" id="card10">
+                    <h3>Bancos Disponíveis NF</h3>
+                    <p class="card__desc">
+                        Itaú<br>
+                        Bradesco<br>
+                        Banco do Brasil<br>
+                        Banrisul<br>
+                        Santander<br>
+                        Nubank<br>
+                    </p>
+                    <div class="buttons">
+                        <button class="copy-button" onclick="copyText('card10')">Copiar</button>
+                        <button class="edit-button" onclick="openModal('card10')">Editar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="flex instalacao">
+            <h1>Data Instalação</h1>
+            <div class="cards">
+                <div class="card" id="card11">
+                    <h3>Manhã e Tarde</h3>
+                    <p class="card__desc">
+                        Eu tenho instalação para ... na parte da manhã entre às 08:00 e 12:00 horas e na parte da tarde entre às 13:00 e 18:00 horas. Este dia ficaria bom para você? E qual horário ficaria melhor?<br><br>
+                        Lembrando que é preciso ter alguém maior de 18 anos para receber o técnico.
+                    </p>
+                    <div class="buttons">
+                        <button class="copy-button" onclick="copyText('card11')">Copiar</button>
+                        <button class="edit-button" onclick="openModal('card11')">Editar</button>
+                    </div>
+                </div>
+
+                <div class="card" id="card12">
+                    <h3>Manhã</h3>
+                    <p class="card__desc">
+                        Eu tenho instalação para ... somente na parte da manhã entre às 08:00 e 12:00 horas. Este dia ficaria bom para você?<br><br>
+                        Lembrando que é preciso ter alguém maior de 18 anos para receber o técnico.
+                    </p>
+                    <div class="buttons">
+                        <button class="copy-button" onclick="copyText('card12')">Copiar</button>
+                        <button class="edit-button" onclick="openModal('card12')">Editar</button>
+                    </div>
+                </div>
+
+                <div class="card" id="card13">
+                    <h3>Tarde</h3>
+                    <p class="card__desc">
+                        Eu tenho instalação para ... somente na parte da tarde entre às 13:00 e 18:00 horas. Este dia ficaria bom para você?<br><br>
+                        Lembrando que é preciso ter alguém maior de 18 anos para receber o técnico.
+                    </p>
+                    <div class="buttons">
+                        <button class="copy-button" onclick="copyText('card13')">Copiar</button>
+                        <button class="edit-button" onclick="openModal('card13')">Editar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="flex checklist">
+            <h1>Checklist</h1>
+            <div class="cards">
+                <div class="card" id="card14">
+                    <h3>Débito</h3>
+                    <p class="card__desc">
+                        😬 Agora preciso somente revisar contigo.<br><br>
+
+                        👀 Veja se todos os dados estão corretos:<br>
+                        ✏️ Nome:<br>
+                        🗓️ Data de nascimento:<br>
+                        👪 Nome da mãe:<br>
+                        📄 CPF:<br>
+                        📧 E-mail:<br>
+                        📱 Telefone:<br>
+                        📍Endereço:<br>
+                        🗺️ Ponto de referência:<br>
+                        📶 Plano:   🪙 Valor: R$<br>
+                        💳Forma de pagamento: débito<br>
+                        🏦Banco:    Agência:    Conta:<br><br>
+
+                        Lembrando que o primeiro débito na sua conta bancária será feito 35 dias depois
+                        da instalação da Oi Fibra. Os outros débitos na sua conta bancária serão
+                        feitos no dia do vencimento.<br>
+                    </p>
+                    <div class="buttons">
+                        <button class="copy-button" onclick="copyText('card14')">Copiar</button>
+                        <button class="edit-button" onclick="openModal('card14')">Editar</button>
+                    </div>
+                </div>
+
+                <div class="card" id="card15">
+                    <h3>Boleto</h3>
+                    <p class="card__desc">
+                        😬 Agora preciso somente revisar contigo.<br><br>
+
+                        👀 Veja se todos os dados estão corretos:<br>
+                        ✏️ Nome:<br>
+                        🗓️ Data de nascimento:<br>
+                        👪 Nome da mãe:<br>
+                        📄 CPF:<br>
+                        📧 E-mail:<br>
+                        📱 Telefone:<br>
+                        📍Endereço:<br>
+                        🗺️ Ponto de referência:<br>
+                        📶 Plano:   🪙 Valor: R$<br>
+                        💳Forma de pagamento: boleto<br>
+                    </p>
+                    <div class="buttons">
+                        <button class="copy-button" onclick="copyText('card15')">Copiar</button>
+                        <button class="edit-button" onclick="openModal('card15')">Editar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="flex encerramento">
+            <h1>Encerramento</h1>
+            <div class="cards">
+                <div class="card" id="card16">
+                    <h3>Multa Legado</h3>
+                    <p class="card__desc">
+                        A oferta possui uma fidelidade no valor de R$480,00. No entanto, essa taxa só será cobrada caso a banda larga seja cancelada antes de completar 12 meses, de forma proporcional aos meses restantes, e, em parcela única. Todos os meses serão descontado R$40 até ser zerado totalmente ao fim dos 12 meses.<br><br>
+
+                        Não se preocupe pois não terá nenhum acréscimo em sua fatura, sempre virá o preço contratado. Os R$40 são só um desconto feito automático feito na taxa de “fidelidade”.<br><br>
+
+                        Exemplo de como irá funcionar a cada mês de uso:<br><br>
+
+                        1° mês de uso R$480<br>
+                        2° mês de uso R$440<br>
+                        3° mês de uso R$400<br>
+                        4° mês de uso R$360<br>
+                        5° mês de uso R$320<br>
+                        6° mês de uso R$280<br>
+                        … até ser zerado totalmente ao fim dos 12 meses.
+                    </p>
+                    <div class="buttons">
+                        <button class="copy-button" onclick="copyText('card16')">Copiar</button>
+                        <button class="edit-button" onclick="openModal('card16')">Editar</button>
+                    </div>
+                </div>
+
+                <div class="card" id="card17">
+                    <h3>Multa Nova Fibra</h3>
+                    <p class="card__desc">
+                        A oferta possui taxa de habilitação no valor de R$540,00. No entanto, essa taxa só será cobrada caso a banda larga seja cancelada antes de completar 12 meses, de forma proporcional aos meses restantes, e, em parcela única. Todos os meses serão descontado R$45 até ser zerado totalmente ao fim dos 12 meses.<br><br>
+
+                        Não se preocupe pois não terá nenhum acréscimo em sua fatura, sempre virá o preço contratado. Os R$45 são só um desconto feito automático feito na taxa de “fidelidade”. Como não tem fidelidade seria como uma…<br><br>
+
+                        Exemplo de como irá funcionar a cada mês de uso:<br><br>
+
+                        1° mês de uso R$540<br>
+                        2° mês de uso R$495<br>
+                        3° mês de uso R$450<br>
+                        4° mês de uso R$405<br>
+                        5° mês de uso R$360<br>
+                        6° mês de uso R$315<br>
+                        … até ser zerado totalmente ao fim dos 12 meses.
+
+                    </p>
+                    <div class="buttons">
+                        <button class="copy-button" onclick="copyText('card17')">Copiar</button>
+                        <button class="edit-button" onclick="openModal('card17')">Editar</button>
+                    </div>
+                </div>
+
+                <div class="card" id="card18">
+                    <h3>Aviso finais</h3>
+                    <p class="card__desc">
+
+                        1 - A *Joice* nossa assistente virtual enviou para você em seu WhatsApp todo o resumo da venda. Peço por gentileza que confirma para ela com um *SIM* ou *1* conforme solicitado.<br><br>
+
+                        2 - Caso alguém entre em contato com você dizendo que sua venda teve algum erro, ou foi cancelada eu peço que você ignore pois pode ser alguma tentativa de fraude. A única pessoa que pode entrar em contato com você sou eu (Danilo Aguiar, BC788068) e a auditoria da Oi para confirmar os dados da venda. Em momento algum será solicitado novos dados. Se houver qualquer erro que seja eu mesmo te ligo da nossa central e te informo.<br><br>
+
+                        3 - Suas faturas serão enviadas no E-mail cadastrado. Também será enviado em seu E-mail o contrato e todo o resumo da sua compra.<br><br>
+
+                        4 - Não esqueça de baixar o aplicativo *Oi_e* para eventuais dúvidas ou caso queira suporte com alguma coisa. Caso prefira você pode entrar em contato com a *Joice* nossa assistente virtual pelo número 3131313131 ou ligando na nossa central pelo 08000318000<br><br>
+
+                    </p>
+                    <div class="buttons">
+                        <button class="copy-button" onclick="copyText('card18')">Copiar</button>
+                        <button class="edit-button" onclick="openModal('card18')">Editar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </div>
 
