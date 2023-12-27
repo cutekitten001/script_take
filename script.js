@@ -51,14 +51,37 @@ function closeModal() {
 function saveChanges() {
     var modal = document.getElementById('myModal');
     var textarea = document.getElementById('editQuote');
-    var cardId = modal.getAttribute('data-editing');
+    var elementId = modal.getAttribute('data-editing');
 
-    if (cardId) {
-        let cardElement = document.getElementById(cardId).querySelector('.card__desc');
-        cardElement.innerText = textarea.value;
-        // Salva o texto editado no localStorage
-        localStorage.setItem(cardId + '_text', textarea.value);
+    if (elementId) {
+        var quoteElement = document.getElementById(elementId).querySelector('.card__desc');
+        quoteElement.innerText = textarea.value;
+
+        // Salva os dados no localStorage
+        localStorage.setItem(elementId, textarea.value);
+
         closeModal();
+
+            // Carrega novamente os dados salvos
+            loadSavedData();
     }
 }
 
+
+// Adicione a função loadSavedData() ao final do script.js
+function loadSavedData() {
+    // Itera sobre os elementos com a classe 'card' e carrega os dados salvos
+    document.querySelectorAll('.card').forEach(function (card) {
+        var cardId = card.id;
+        var savedData = localStorage.getItem(cardId);
+
+        if (savedData !== null) {
+            card.querySelector('.card__desc').innerText = savedData;
+        }
+    });
+}
+
+// Chama a função loadSavedData() quando a página é carregada
+document.addEventListener('DOMContentLoaded', function () {
+    loadSavedData();
+});
