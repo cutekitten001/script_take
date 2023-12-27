@@ -4,66 +4,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dark Theme Cards</title>
+    <title>Script Take</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="container">
-        <h1 class="text__initial">Script Take</h1>
-        <div class="card" id="card1">
-            <p class="quote">Olá, tudo bem? Me chamo *Danilo* e vou dar prosseguimento em seu atendimento! Me informa por gentileza o *CEP*, *Nome da Rua* e *Número de fachada da residência* para verificar se possui viabilidade na sua região e logo em seguida te passar nossas ofertas</p>
-            <div class="buttons">
-                <button class="copy-button" onclick="copyText('card1')">Copiar</button>
-                <button class="edit-button" onclick="openModal('card1')">Editar</button>
+        <div class="flex fraseologia">
+            <h2>Fraseologia</h2>
+            <div class="card" id="card1">
+                <p class="quote">Olá, tudo bem? Me chamo *Danilo* e vou dar prosseguimento em seu atendimento! Me informa por gentileza o *CEP*, *Nome da Rua* e *Número de fachada da residência* para verificar se possui viabilidade na sua região e logo em seguida te passar nossas ofertas</p>
+                <div class="buttons">
+                    <button class="copy-button" onclick="copyText('card1')">Copiar</button>
+                    <button class="edit-button" onclick="openModal('card1')">Editar</button>
+                </div>
             </div>
         </div>
-        <div class="card" id="card2">
-            <p class="quote">
-                📌 1 - Oi Fibra 1 GB *R$199,90* no *Cartão de Crédito ou Débito em Conta*<br><br>
 
-                📌 2 - Oi Fibra 600MB *R$109,90* no *Cartão de Crédito ou Débito em Conta*<br><br>
-                
-                📌 3 - Oi Fibra 400MB *R$89,90* no *Cartão de Crédito ou Débito em Conta*<br><br>
-                
-                ⚠️ Boleto tem o acréscimo de R$20,00<br><br>
-            </p>
-            <div class="buttons">
-                <button class="copy-button" onclick="copyText('card2')">Copiar</button>
-                <button class="edit-button" onclick="openModal('card2')">Editar</button>
+        <div class="ofertas">
+            <h2>Ofertas</h2>
+            <div class="card_ofertas">
+                <div class="card" id="card2">
+                    <p class="quote">
+                        📌 1 - Oi Fibra 1 GB *R$199,90* no *Cartão de Crédito ou Débito em Conta*<br><br>
+    
+                        📌 2 - Oi Fibra 600MB *R$109,90* no *Cartão de Crédito ou Débito em Conta*<br><br>
+                        
+                        📌 3 - Oi Fibra 400MB *R$89,90* no *Cartão de Crédito ou Débito em Conta*<br><br>
+                        
+                        ⚠️ Boleto tem o acréscimo de R$20,00<br><br>
+                    </p>
+                    <div class="buttons">
+                        <button class="copy-button" onclick="copyText('card2')">Copiar</button>
+                        <button class="edit-button" onclick="openModal('card2')">Editar</button>
+                    </div>
+                </div>
+                <div class="card" id="card3">
+                    <p class="quote">
+                        📌 1 - Oi Fibra 1 GB *R$199,90* no *Cartão de Crédito ou Débito em Conta*<br><br>
+    
+                        📌 2 - Oi Fibra 600MB *R$109,90* no *Cartão de Crédito ou Débito em Conta*<br><br>
+                        
+                        📌 3 - Oi Fibra 400MB *R$89,90* no *Cartão de Crédito ou Débito em Conta*<br><br>
+                        
+                        ⚠️ Boleto tem o acréscimo de R$20,00<br><br>
+                    </p>
+                    <div class="buttons">
+                        <button class="copy-button" onclick="copyText('card3')">Copiar</button>
+                        <button class="edit-button" onclick="openModal('card3')">Editar</button>
+                    </div>
+                </div>
+                <div class="card" id="card4">
+                    <p class="quote">
+                        📌 1 - Oi Fibra 1 GB *R$199,90* no *Cartão de Crédito ou Débito em Conta*<br><br>
+    
+                        📌 2 - Oi Fibra 600MB *R$109,90* no *Cartão de Crédito ou Débito em Conta*<br><br>
+                        
+                        📌 3 - Oi Fibra 400MB *R$89,90* no *Cartão de Crédito ou Débito em Conta*<br><br>
+                        
+                        ⚠️ Boleto tem o acréscimo de R$20,00<br><br>
+                    </p>
+                    <div class="buttons">
+                        <button class="copy-button" onclick="copyText('card4')">Copiar</button>
+                        <button class="edit-button" onclick="openModal('card4')">Editar</button>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="card" id="card3">
-            <p class="quote">
-                📌 1 - Oi Fibra 1 GB *R$199,90* no *Cartão de Crédito ou Débito em Conta*<br><br>
 
-                📌 2 - Oi Fibra 600MB *R$109,90* no *Cartão de Crédito ou Débito em Conta*<br><br>
-                
-                📌 3 - Oi Fibra 400MB *R$89,90* no *Cartão de Crédito ou Débito em Conta*<br><br>
-                
-                ⚠️ Boleto tem o acréscimo de R$20,00<br><br>
-            </p>
-            <div class="buttons">
-                <button class="copy-button" onclick="copyText('card3')">Copiar</button>
-                <button class="edit-button" onclick="openModal('card3')">Editar</button>
-            </div>
+            <!-- Adicione mais cards conforme necessário -->
         </div>
-        <div class="card" id="card4">
-            <p class="quote">
-                📌 1 - Oi Fibra 1 GB *R$199,90* no *Cartão de Crédito ou Débito em Conta*<br><br>
 
-                📌 2 - Oi Fibra 600MB *R$109,90* no *Cartão de Crédito ou Débito em Conta*<br><br>
-                
-                📌 3 - Oi Fibra 400MB *R$89,90* no *Cartão de Crédito ou Débito em Conta*<br><br>
-                
-                ⚠️ Boleto tem o acréscimo de R$20,00<br><br>
-            </p>
-            <div class="buttons">
-                <button class="copy-button" onclick="copyText('card4')">Copiar</button>
-                <button class="edit-button" onclick="openModal('card4')">Editar</button>
-            </div>
-        </div>
-        <!-- Adicione mais cards conforme necessário -->
+
+
     </div>
 
     <!-- Modal -->
