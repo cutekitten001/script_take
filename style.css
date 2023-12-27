@@ -8,13 +8,44 @@ body {
     padding: 0;
 }
 
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .container {
     max-width: 100%;
     margin: 50px 10px;
     padding: 0 10px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(calc(48% - 10px), 1fr));
     gap: 20px;
+    grid-template-areas: 
+    "fraseologia fraseologia fraseologia"
+    "ofertas ofertas ofertas";
+    justify-items: center;;
+}
+
+.container .fraseologia {
+    grid-area: fraseologia;
+    width: 50%;
+    height: 50vh;
+}
+
+.container .ofertas {
+    width: 100%;
+    grid-area: ofertas;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid red;
+}
+
+.container .ofertas .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .card {
