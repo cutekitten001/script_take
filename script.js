@@ -32,12 +32,14 @@ function showAlert() {
     }, 1000);
 }
 
-function openModal(elementId) {
+function openModal(cardId) {
     var modal = document.getElementById('myModal');
     var textarea = document.getElementById('editQuote');
-    textarea.value = document.getElementById(elementId).querySelector('.card__desc').innerText;
+    let storedText = localStorage.getItem(cardId + '_text') // Recupera o texto armazenado
+    textarea.value + storedText || document.getElementById(elementId).querySelector('.card__desc').innerText;
+    // textarea.value = document.getElementById(elementId).querySelector('.card__desc').innerText;
 
-    modal.setAttribute('data-editing', elementId);
+    modal.setAttribute('data-editing', cardId);
 
     modal.style.display = 'block';
 }
@@ -49,11 +51,14 @@ function closeModal() {
 function saveChanges() {
     var modal = document.getElementById('myModal');
     var textarea = document.getElementById('editQuote');
-    var elementId = modal.getAttribute('data-editing');
+    var cardId = modal.getAttribute('data-editing');
 
-    if (elementId) {
-        var quoteElement = document.getElementById(elementId).querySelector('.card__desc');
-        quoteElement.innerText = textarea.value;
+    if (cardId) {
+        let cardElement = document.getElementById(cardId).querySelector('.card__desc');
+        cardElement.innerText = textarea.value;
+        // Salva o texto editado no localStorage
+        localStorage.setItem(cardId + '_text', textarea.value);
         closeModal();
     }
 }
+
