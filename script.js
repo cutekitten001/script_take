@@ -33,11 +33,15 @@ function showAlert() {
 }
 
 function openModal(cardId) {
-    var modal = document.getElementById('myModal');
-    var textarea = document.getElementById('editQuote');
+    let modal = document.getElementById('myModal');
+    let textarea = document.getElementById("editQuote");
     let storedText = localStorage.getItem(cardId + '_text') // Recupera o texto armazenado
-    textarea.value + storedText || document.getElementById(elementId).querySelector('.card__desc').innerText;
-    // textarea.value = document.getElementById(elementId).querySelector('.card__desc').innerText;
+    let cardText = document.getElementById(cardId).querySelector('.card__desc').innerText;
+
+    textarea.innerText = cardText
+
+    textarea.value + storedText || document.getElementById(cardId).querySelector('.card__desc').innerText;
+//     // textarea.value = document.getElementById(elementId).querySelector('.card__desc').innerText;
 
     modal.setAttribute('data-editing', cardId);
 
