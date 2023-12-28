@@ -1,5 +1,5 @@
 function copyText(cardId) {
-    let card = document.getElementById(cardId).querySelector('.card__desc')
+    let card = document.getElementById(cardId).querySelector('.card__desc');
     let copyCard = card.innerText.trim().replace(/^["']|["']$/g, ''); // Remove as aspas no início e no final
     let range = document.createRange();
     range.selectNode(card);
@@ -8,11 +8,11 @@ function copyText(cardId) {
 
     try {
         document.execCommand('copy');
-        window.getSelection().removeAllRanges;
+        window.getSelection().removeAllRanges();
 
         showAlert("Texto copiado: " + copyCard);
     } catch (err) {
-        console.log("Erro ao copiar texto: ", err)
+        console.log("Erro ao copiar texto: ", err);
     }
 }
 
@@ -35,16 +35,10 @@ function showAlert() {
 function openModal(cardId) {
     let modal = document.getElementById('myModal');
     let textarea = document.getElementById("editQuote");
-    let storedText = localStorage.getItem(cardId + '_text') // Recupera o texto armazenado
-    let cardText = document.getElementById(cardId).querySelector('.card__desc').innerText;
+    let storedText = localStorage.getItem(cardId) || '';
 
-    textarea.innerText = cardText
-
-    textarea.value + storedText || document.getElementById(cardId).querySelector('.card__desc').innerText;
-//     // textarea.value = document.getElementById(elementId).querySelector('.card__desc').innerText;
-
+    textarea.value = storedText || document.getElementById(cardId).querySelector('.card__desc').innerText;
     modal.setAttribute('data-editing', cardId);
-
     modal.style.display = 'block';
 }
 
@@ -65,12 +59,10 @@ function saveChanges() {
         localStorage.setItem(elementId, textarea.value);
 
         closeModal();
-
-            // Carrega novamente os dados salvos
-            loadSavedData();
+        // Carrega novamente os dados salvos
+        loadSavedData();
     }
 }
-
 
 // Adicione a função loadSavedData() ao final do script.js
 function loadSavedData() {
@@ -89,7 +81,6 @@ function loadSavedData() {
 document.addEventListener('DOMContentLoaded', function () {
     loadSavedData();
 });
-
 
 // Rolamento suave para links âncora
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
